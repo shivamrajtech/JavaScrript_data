@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+
+            background: rgb(255, 165, 92);
+            background: radial-gradient(circle, rgb(92, 222, 255) 0%, rgba(148, 187, 233, 1) 100%);
+
+        }
+
+        div {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+
+            color: azure;
+        }
+
+        h1:hover {
+            color: aquamarine;
+        }
+
+        #but {
+            border: none;
+            height: 20rem;
+            width: 20rem;
+            font-size: 24px;
+            border-radius: 10rem;
+            background-color: rgba(44, 116, 126, 0.623);
+            z-index: -1;
+            transform: translateX(64%);
+
+        }
+
+        @media screen and (max-width:700px) {
+            body {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="but"></button>
+        <h1>
+            Javascript part 2
+        </h1>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

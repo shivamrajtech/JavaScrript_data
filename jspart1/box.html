@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        .main_box {
+            width: 25rem;
+            height: 20rem;
+            border: 2px solid black;
+            position: relative;
+            margin-top: 10%;
+            left: 10%;
+
+        }
+
+        .box_top_bottom_face {
+            height: 37%;
+            width: 5rem;
+            position: absolute;
+
+
+        }
+
+        .box_left_rigth_face {
+            height: 5rem;
+            width: 40%;
+            position: absolute;
+        }
+
+        .box1 {
+
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: blueviolet;
+        }
+
+        .box2 {
+
+            top: 50%;
+            right: 0%;
+            transform: translateY(-50%);
+
+            background-color: rgb(226, 198, 43);
+        }
+
+        .box3 {
+
+            left: 0%;
+            bottom: 50%;
+            transform: translateY(50%);
+            background-color: rgb(43, 183, 226);
+        }
+
+        .box4 {
+
+            bottom: 0%;
+            right: 50%;
+            transform: translateX(50%);
+            background-color: rgb(189, 43, 226);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_box">
+        <div class="box_top_bottom_face box1"></div>
+        <div class="box_left_rigth_face   box2"></div>
+        <div class="box_left_rigth_face   box3"></div>
+        <div class="box_top_bottom_face box4"></div>
+    </div>
+
+</body>
+
+</html>
