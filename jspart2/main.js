@@ -312,3 +312,25 @@
 
 // console.log(`${shivamObject.firstname}  has ${shivamObject.friends.length} friends, and his best friend is  called ${shivamObject.friends[4]} `);
 
+
+// Object method 
+
+const shivamObject = {
+        firstname: 'shivam',
+        lastname:'raj',
+        birthYear : 1997,
+        friends: ['suman' ,'raina' , 'utkarsh' ],
+        job : 'Devloper',
+        // caclAge: function (birthYear){
+        //     return 2021 - birthYear
+        //         }
+        caclAge: function (){
+            return 2021 - this.birthYear;
+                }
+
+    };
+
+//    console.log(shivamObject.caclAge(1997));
+//    console.log(shivamObject['caclAge'](1997));
+
+console.log(shivamObject.caclAge());
