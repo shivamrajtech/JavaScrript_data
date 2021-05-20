@@ -315,22 +315,136 @@
 
 // Object method 
 
-const shivamObject = {
-        firstname: 'shivam',
-        lastname:'raj',
-        birthYear : 1997,
-        friends: ['suman' ,'raina' , 'utkarsh' ],
-        job : 'Devloper',
-        // caclAge: function (birthYear){
-        //     return 2021 - birthYear
-        //         }
-        caclAge: function (){
-            return 2021 - this.birthYear;
-                }
+// const shivamObject = {
+//         firstname: 'shivam',
+//         lastname:'raj',
+//         birthYear : 1997,
+//         friends: ['suman' ,'raina' , 'utkarsh' ],
+//         job : 'Devloper',
+//         hasDriversLicense:true,
+//         // caclAge: function (birthYear){
+//         //     return 2021 - birthYear
+//         //         }
+//         caclAge: function (){
+//             this.age = 2021 - this.birthYear;
+//             return this.age;
+//                 },
+            
+//             getSummary:function(){
+//                return  `${shivamObject.firstname} is  a ${this.caclAge()} year old ${shivamObject.job} , and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;    //use ternary operator 
+//             }
+//     };
 
-    };
+// //    console.log(shivamObject.caclAge(1997));
+// //    console.log(shivamObject['caclAge'](1997));
 
-//    console.log(shivamObject.caclAge(1997));
-//    console.log(shivamObject['caclAge'](1997));
+// console.log(shivamObject.caclAge());
+
+// console.log(shivamObject.getSummary());
+
+// #######################Challenge 3#
+
+// const shivamObj = {
+//     firstname: 'shivam',
+//     lastname:'raj',
+//     mass:84,
+//     height:1.8,
+    
+//     bmiCalc: function (){
+//         this.bodyMass = this.mass / this.height  **2;
+//         return this.bodyMass;
+//     }
+// }
+// const utkarshGandu ={
+//     firstname:'Utkarsh',
+//      lastname:'gandu',
+//      mass:65 ,
+//      height:1.6,
+     
+//      bmiCalc: function (){
+//          this.bodyMass = this.mass / this.height  **2;
+//          return this.bodyMass;
+//      }
+ 
+//  }
+ 
+//  shivamObj.bmiCalc();
+//  utkarshGandu.bmiCalc();
+//  console.log(shivamObj.bodyMass,utkarshGandu.bodyMass);
+ 
+// if(shivamObj.bodyMass>utkarshGandu.bodyMass)
+// {
+//     console.log(`${shivamObj.firstname } ${shivamObj.lastname } is the king`);
+// }else{
+//     console.log(`${utkarshGandu.firstname } is the king`);
+// }
+
+// const factorial = function (number){
+//     let answer = 1;
+//     if(number===0 || number===0 ){
+//         return answer;
+//     }else{
+//         for(let i=1;i<=number;i++){
+//         answer= answer*i;
+//         console.log(answer);
+//         }
+//         return answer;
+//     }
+
+// }
+
+
+//     const n=5;
+    
+//     console.log(factorial(n));
+
+// ++++++++++++++for loop+++++++++++
+
+// for(let i =1; i<=10; i+=0.5){
+//     console.log('utkarsh gandu',i);
+// }
+
+
+
+
+const shivamObject = [
+    'shivam',
+'raj',
+    1997,
+ ['suman' ,'raina' , 'utkarsh' ],
+ 'Devloper',
+];
+
+
+for(let i = shivamObject.length -1 ;  i>=0 ; i-=1){
+    const reversedata=i+" " + shivamObject[i];
+   console.log(reversedata);
+}
+
+for(let num = 1; num<=10; num+=2){
+    console.log("*");
+}
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write('*');
+    }
+    document.write('<br />');
+    
+}
+
+for(var i=1; i<=10; i*=2){
+    console.log("* ".repeat(i));
+ }
+const number= 6;
+if(number===5){
+    for(let i =2 ; i<=10;i+=1){
+        document.write('<h1>Happy birthday</h1>');
+    }
+}else{
+    document.write('<h1>Not Birthday</h1>');
+}
+
+  
 
 console.log(shivamObject.caclAge());
