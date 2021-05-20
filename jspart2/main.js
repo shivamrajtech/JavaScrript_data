@@ -447,4 +447,3 @@ if(number===5){
 
   
 
-console.log(shivamObject.caclAge());
