@@ -407,43 +407,147 @@
 
 
 
-const shivamObject = [
-    'shivam',
-'raj',
-    1997,
- ['suman' ,'raina' , 'utkarsh' ],
- 'Devloper',
-];
+// const shivamObject = [
+//     'shivam',
+// 'raj',
+//     1997,
+//  ['suman' ,'raina' , 'utkarsh' ],
+//  'Devloper',
+// ];
 
 
-for(let i = shivamObject.length -1 ;  i>=0 ; i-=1){
-    const reversedata=i+" " + shivamObject[i];
-   console.log(reversedata);
-}
+// for(let i = shivamObject.length -1 ;  i>=0 ; i-=1){
+//     const reversedata=i+" " + shivamObject[i];
+//    console.log(reversedata);
+// }
 
-for(let num = 1; num<=10; num+=2){
-    console.log("*");
-}
+// for(let num = 1; num<=10; num+=2){
+//     console.log("*");
+// }
 
-for (let i = 1; i <= 5; i++) {
-    for (let j = 1; j <= i; j++) {
-        document.write('*');
-    }
-    document.write('<br />');
+// for (let i = 1; i <= 5; i++) {
+//     for (let j = 1; j <= i; j++) {
+//         document.write('*');
+//     }
+//     document.write('<br />');
     
-}
+// }
 
-for(var i=1; i<=10; i*=2){
-    console.log("* ".repeat(i));
- }
-const number= 6;
-if(number===5){
-    for(let i =2 ; i<=10;i+=1){
-        document.write('<h1>Happy birthday</h1>');
-    }
-}else{
-    document.write('<h1>Not Birthday</h1>');
-}
+// for(var i=1; i<=10; i*=2){
+//     console.log("* ".repeat(i));
+//  }
+// const number= 5;
+// if(number===5){
+//     for(let i =2 ; i<=10;i+=1){
+//         document.write('<h1>Happy birthday</h1></br>');
+//     }
+// }else{
+//     document.write('<h1>Not Birthday</h1>');
+// }
 
   
+// ########## for loop exp########
+
+// const shivamObject = [
+//     'shivam',
+// 'raj',
+//     1997,
+//  ['suman' ,'raina' , 'utkarsh' ],
+//  'Devloper',
+// ];
+// const transfer = [];
+// for(let i = 0 ; i<shivamObject.length; i+=1){
+//     // here we read the data in array
+//     console.log(shivamObject[i], typeof shivamObject[i]);
+//     //here we write same data in  different array transfer
+//     // transfer[i] =  typeof shivamObject[i];
+//     transfer.push(typeof shivamObject[i]);
+// }
+
+// console.log(transfer);
+
+// calcage of given data in array and store in different array
+
+// const birthYear = [1994,1997,1999,1995];
+
+// const age =[];
+// for(let i = 0 ; i < birthYear.length; i+=1){
+//     // age.push( 2021 - birthYear[i]);
+//       age[i] = 2021 - birthYear[i];
+// }
+// console.log(age);
+
+
+// ################# Continue and Break#################
+// const shivamObject = [
+//     'shivam',
+// 'raj',
+//     1997,
+//  ['suman' ,'raina' , 'utkarsh' ],
+//  'Devloper',
+// ];
+// console.log('------Only continue-------');
+// for(let i = 0; i < shivamObject.length; i+=1){
+//     if(typeof shivamObject[i] !== 'string') continue;
+//     console.log(shivamObject[i],typeof shivamObject[i]);
+// }
+
+// console.log('---------Only break -----------');
+
+// for(let i = 0; i < shivamObject.length; i++){
+//     if(typeof shivamObject[i] === 'number') break;
+//     console.log(shivamObject[i], typeof shivamObject[i]);
+// }
+
+//############## The while loop###########
+
+// let rep = 0;
+// rep+=1;
+// while(rep<=10){
+//     console.log(`Number of ${rep}`);
+//     rep+=1;
+// }
+
+// let dice = Math.trunc(Math.random()* 6) + 1; //This will return random number remove float value and give integral value
+
+// while(dice !== 6){
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random()* 6) + 1; //here again use dice random for change the value every itteration !
+// //here check where the value come 6 display value of dice become 6
+//  if(dice === 6 ) console.log(`Your dice value become ${dice}`);
+// }
+
+// //###############Challenge no 4!!!!!!!!!!!!!!!!
+
+// const billArray = [22,295,176,440,37,105,10,1100,86,52]
+// const tip = [];
+// const total =[];
+
+// for(let i = 0; i<billArray.length; i+=1){
+//     //print the array in different tip
+//     //tip.push(billArray[i]);
+//     const calctip =function(bill){
+//         return bill <300 && bill >= 50 ? bill*0.15 : bill*0.20;
+//     }
+//    tip.push(calctip(billArray[i]));
+//    total.push(tip[i]+billArray[i]);
+// }
+// console.log(tip);
+// console.log(total);
+
+// // Here we calculate the average of given array data 
+
+// const arr =[22,295,176,440,37,105,10,1100,86,52];
+// const calcAverage = function (arry) {
+//     let sum =0 ;
+//   for(let i = 0 ; i < arry.length; i+=1){
+  
+// //    sum = sum + arr[i]
+//    sum += arry[i];
+ 
+// }
+// return sum/2;
+// }
+
+// console.log(calcAverage(arr));
 
